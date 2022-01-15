@@ -9,7 +9,16 @@
 .introduction-container,
 .hero-container,
 .top-container,
-.info-box
+.info-box,
+.info-section-container,
+.info-header,
+.info-box-container,
+.info-box,
+.info-box-text,
+.info-box-image,
+.quote-container,
+.quote,
+.quote-credit
 {
     display: flex;
 }
@@ -35,6 +44,7 @@
     padding: 0px;
     width:70%;
     margin-left: 270px;
+    
     
 }
 
@@ -107,7 +117,7 @@
 
 .sign-up:hover
 {
-    background-color: rgb(255, 91, 118);
+    background-color: rgb(255, 179, 196);
     color: rgb(83, 0, 0);
     cursor: pointer; 
     border: 1px solid rgb(59, 0, 0);
@@ -116,7 +126,7 @@
 
 .intro-hero
 {
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 900;
 }
 
@@ -143,8 +153,62 @@
 
 .info-box
 {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border: 3px solid darkred;
+    border-radius: 10px;
+    flex-direction: column;
 }
 
+.info-section-container
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.info-header
+{
+    font-size: 36px;
+    color: darkred;
+    font-weight: 700;
+    padding: 70px;
+}
+
+.info-box-container
+{
+    gap: 80px;
+}
+
+
+
+/* quote section */
+
+.quote-container
+{
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: rgb(255, 186, 186);
+    gap: 30px;
+    padding: 60px;
+}
+
+.quote
+{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: darkred;
+    flex: 1;
+    width: 55%;
+    padding-top: 40px;
+}
+
+.quote-credit
+{
+    font-size: 36px;
+    font-weight: 800;
+    color: darkred;
+    justify-content: flex-end;
+}
