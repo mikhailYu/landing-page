@@ -18,7 +18,17 @@
 .info-box-image,
 .quote-container,
 .quote,
-.quote-credit
+.quote-credit,
+.sign-up-container,
+.sign-up-text-container,
+.sign-up-header,
+.sign-up-text,
+.sign-up-2,
+.sign-up-area,
+.footer-container,
+.footer-text,
+.copyright-note,
+.credit-link
 {
     display: flex;
 }
@@ -108,19 +118,19 @@
     padding-left: 25px;
     padding-right: 25px;
     color: white;
-    background-color: rgb(151, 13, 20);
+    background-color: rgb(98, 0, 5);
     border-radius: 10px;
     border: none;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(151, 13, 20);
     margin-top: 10px;
 }
 
 .sign-up:hover
 {
-    background-color: rgb(255, 179, 196);
+    background-color: rgb(255, 255, 255);
     color: rgb(83, 0, 0);
     cursor: pointer; 
-    border: 1px solid rgb(59, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
     
 }
 
@@ -153,11 +163,10 @@
 
 .info-box
 {
-    width: 170px;
-    height: 170px;
-    border: 3px solid darkred;
-    border-radius: 10px;
+    
     flex-direction: column;
+    gap: 10px;
+    
 }
 
 .info-section-container
@@ -166,6 +175,8 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .info-header
@@ -181,6 +192,27 @@
     gap: 80px;
 }
 
+.info-box-image
+{
+    overflow: hidden;
+    width: 170px;
+    height: 170px;
+    border: 3px solid rgb(71, 0, 0);
+    border-radius: 20px;
+    flex-direction: column;
+    
+}
+
+.info-box-text
+{
+    width: 170px;
+    text-align: center;
+    font-weight: 370;
+    font-size: 16px;
+}
+
+
+
 
 
 /* quote section */
@@ -189,7 +221,7 @@
 {
     flex-flow: column wrap;
     align-content: center;
-    background-color: rgb(255, 186, 186);
+    background-color: rgb(255, 224, 224);
     gap: 30px;
     padding: 60px;
 }
@@ -211,4 +243,92 @@
     font-weight: 800;
     color: darkred;
     justify-content: flex-end;
+}
+
+/* sign up section */
+
+.sign-up-container
+{
+    background-color: rgb(228, 0, 19);
+    width: 60%;
+    justify-content: space-around;
+    align-content: center;
+    padding: 60px;
+    color: white;
+    border-radius: 30px;
+}
+
+.sign-up-area
+{
+    justify-content: center;
+    padding: 100px;
+}
+
+.sign-up-text-container
+{
+    flex-direction: column;
+}
+
+.sign-up-header
+{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.sign-up-2
+{
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.sign-up-2:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 0, 0);
+    cursor: pointer; 
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.sign-up-text
+{
+    font-size: 20;
+}
+
+/* footer content */
+
+.footer-container
+{
+    background-color: rgb(228, 0, 19);
+    justify-content: center;
+}
+
+.footer-text
+{
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    gap: 10px;
+    
+}
+
+.pexels
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+}
+
+.pexels:hover
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
